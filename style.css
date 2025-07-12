@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Proxima Nova', Avenir, Arial, sans-serif;
+  background-color: #EAF6FE;
+  color: #2E9DF7;
+  background-image: url("img/file.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  background-color: white;
+  color: #2E9DF7;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  overflow: auto;
+}
+
+.logo {
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  float: left;
+}
+
+.nav-right {
+  float: right;
+  margin-top: 0.3em;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2E9DF7;
+  font-size: 1em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url("img/file.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem;
+  color: #FFC907;
+}
+
+.hero h1, .hero p, .cta {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  color: #FFC907;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  text-align: left;
+  color: #fff;
+}
+
+.cta {
+  background-color: #FFC907;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: left;
+}
+
+.cta:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: white;
+  color: #2E9DF7;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 1rem 0.5rem;
+    min-height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  .cta {
+    margin-left: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+}
