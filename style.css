@@ -1,71 +1,70 @@
 body {
   margin: 0;
+  /* Use Proxima Nova font for the whole page */
   font-family: 'Proxima Nova', Avenir, Arial, sans-serif;
-  background-color: #EAF6FE;
-  color: #2E9DF7;
-  background-image: url("img/file.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #EAF6FE; /* light blue background for a fresh look */
+  color: #2E9DF7; /* blue for main text */
+  background-image: url('img/file.png');
 }
 
 header {
-  background-color: white;
-  color: #2E9DF7;
-  padding: 0.75rem 1rem;
-  font-size: 1.1rem;
+  background-color: white; /* white background for header */
+  color: #2E9DF7; /* blue text for contrast */
+  padding: 0.75rem 1rem; /* smaller padding */
+  font-size: 1.1rem; /* make the header text smaller */
+  /* Clear floats so header contains both logo and nav */
   overflow: auto;
 }
 
 .logo {
-  height: 2em;
-  vertical-align: middle;
-  margin-right: 0.5em;
-  float: left;
+  height: 4em; /* Make the logo about the same height as the header text */
+  vertical-align: middle; /* Align the logo with the text */
+  margin-right: 0.5em; /* Add a little space between the logo and the text */
+  float: left; /* Put the logo on the left */
 }
 
 .nav-right {
-  float: right;
-  margin-top: 0.3em;
+  float: right; /* Move the navigation to the right */
+  margin-top: 1.3em; /* Align with logo */
 }
 
 .nav-links {
-  list-style: none;
+  list-style: none; /* Remove bullets */
   margin: 0;
   padding: 0;
 }
 
 .nav-links li {
-  display: inline-block;
-  margin-left: 1em;
+  display: inline-block; /* Show links in a row */
+  margin-left: 1em; /* Space between links */
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #2E9DF7;
-  font-size: 1em;
+  text-decoration: none; /* Remove underline */
+  color: #2E9DF7; /* Blue links */
+  font-size: 1em; /* Small size */
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
 }
 
 .hero {
-  background-image: url("img/file.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 70vh;
-  display: flex;
+  background-image: url('img/file.jpg'); /* background image from img folder */
+  background-size: cover;      /* Make the image cover the whole hero section */
+  background-position: center; /* Center the image */
+  min-height: 70vh;            /* Make the hero section fill most of the page */
+  display: flex;               /* Use flex to center content vertically */
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: flex-start;      /* Align content to the left */
+  justify-content: center;     /* Center the text vertically */
   padding: 2rem 1rem;
-  color: #FFC907;
+  color: #FFC907;              /* yellow text for contrast on blue */
 }
 
 .hero h1, .hero p, .cta {
-  text-align: left;
-  margin-left: 2rem;
+  text-align: left; /* Left align the text and button */
+  margin-left: 2rem; /* Add space from the left edge for better appearance */
 }
 
 .hero img {
@@ -76,62 +75,60 @@ header {
 }
 
 .hero h1 {
-  color: #FFC907;
-  font-size: 2.5rem;
+  color: #FFC907; /* yellow headline */
+  font-size: 2.5rem; /* Make the first header bigger */
   margin: 0.5rem 0;
-  text-align: left;
+  text-align: left; /* Left align the first header */
 }
 
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Make the second header bigger */
   max-width: 600px;
-  text-align: left;
-  color: #fff;
+  text-align: left; /* Left align the second header */
+  color: #fff; /* Make the second header (paragraph) white */
 }
 
 .cta {
-  background-color: #FFC907;
-  color: #fff;
+  background-color: #FFC907; /* yellow button */
+  color: #fff; /* Make CTA text white */
   padding: 1rem 2rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 8px;
   margin-top: 1.5rem;
   display: inline-block;
-  transition: background-color 0.3s, transform 0.3s;
-  text-align: left;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth color and scale change */
+  text-align: left; /* Left align the CTA */
 }
 
 .cta:hover {
-  background-color: #e6b800;
-  transform: scale(1.05);
+  background-color: #e6b800; /* slightly darker yellow on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
 }
 
 footer {
-  background-color: white;
-  color: #2E9DF7;
+  background-color: white; /* white background for footer */
+  color: #2E9DF7; /* blue text for contrast */
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
   margin-top: 5%;
 }
 
+/* Make the page responsive for smaller screens */
 @media (max-width: 600px) {
   .hero {
     padding: 1rem 0.5rem;
     min-height: 50vh;
   }
-
   .hero h1 {
     font-size: 1.2rem;
     margin-left: 1rem;
   }
-
   .hero p {
     font-size: 1rem;
     margin-left: 1rem;
   }
-
   .cta {
     margin-left: 1rem;
     padding: 0.7rem 1.2rem;
